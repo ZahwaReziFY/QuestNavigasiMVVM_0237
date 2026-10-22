@@ -41,3 +41,17 @@ fun FormIsian(
                     }
                 }
             }
+            HorizontalDivider(modifier = Modifier
+                .padding( all = 20.dp)
+                .width(250.dp),
+                thickness = 1.dp,
+                color = Color.Red
+            )
+            OutlinedTextField(
+                value = "",
+                singleLine = true,
+                modifier = Modifier
+                    .width(250.dp),
+                label = {Text(text = "Alamat")},
+                onValueChange = {},
+            )
