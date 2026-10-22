@@ -25,6 +25,7 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.myapplication.R
+import androidx.compose.ui.res.dimensionResource
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -60,8 +61,7 @@ fun FormIsian(
             HorizontalDivider(
                 modifier = Modifier
                     .padding(all = 20.dp)
-                    .width(250.dp), thickness = Thickness, color = Color.Red
-            )
+                    .width(250.dp), thickness = dimensionResource(id = R.dimen.thickness_divider), color = Color.Red)
             Row {
                 jenisK.forEach { item ->
                     Row(verticalAlignment = Alignment.CenterVertically) {
